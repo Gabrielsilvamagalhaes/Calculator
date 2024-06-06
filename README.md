@@ -13,4 +13,4 @@
 
 
 ## Link do projeto 💻
-[https://noticias-cidade-ba.netlify.app](https://calculator-cyan-five.vercel.app)
+calculator-cyan-five.vercel.app
