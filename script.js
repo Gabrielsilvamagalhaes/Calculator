@@ -12,7 +12,7 @@ function calculate() {
         refactorFloatNumber = refactorFloatNumber.toFixed(2);
         result.innerHTML = refactorFloatNumber;
 
-        if(refactorFloatNumber == 'Infinity') {
+        if(refactorFloatNumber == 'Infinity' || isNaN(refactorFloatNumber)) {
             result.innerHTML = 'Não é possível'
         }
     }
