@@ -8,9 +8,16 @@ function calculate() {
     const result = document.getElementById('result');
     if(result) {
        let refactorFloatNumber = eval(result.innerText);
+       console.log(refactorFloatNumber);
         refactorFloatNumber = refactorFloatNumber.toFixed(2);
         result.innerHTML = refactorFloatNumber;
+
+        if(refactorFloatNumber == 'Infinity') {
+            result.innerHTML = 'Não é possível'
+        }
     }
+
+    
 }
 
 function squareCalculate() {
@@ -20,7 +27,7 @@ function squareCalculate() {
     if(isNaN(Number(resultValue))) {
         clean();
         return alert('Insira apenas um número sem operador!');
-    }
+    } 
     result.innerHTML =  '' + Math.sqrt(Number(resultValue));
 }
 
