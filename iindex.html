@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+         />
+        <link rel="shortcut icon" href="Img/calculator.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div id="container">
+            <h2>Calculadora</h2>
+            <div id="result"></div>
+            <table>
+
+                <tr>
+                    <td><button type="button"  onclick="clean()">C</button></td>
+                    <td><button type="button" onclick="insertValues('/')"><i class="fa-solid fa-divide"></i></button></td>
+                    <td><button type="button" onclick="squareCalculate()"><i class="fa-solid fa-square-root-variable"></i></button></td>
+                    <td><button type="button" onclick="back()">
+                        <i class="fa-solid fa-delete-left"></i></button></td>
+
+                </tr>
+                <tr>
+                    <td><button  type="button" onclick="insertValues('7')">7</button></td>
+                    <td><button type="button" onclick="insertValues('8')">8</button></td>
+                    <td><button type="button" onclick="insertValues('9')">9</button></td>
+                    <td><button type="button" onclick="insertValues('*')"><i class="fa-solid fa-xmark"></i></button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="insertValues('4')">4</button></td>
+                    <td><button type="button" onclick="insertValues('5')">5</button></td>
+                    <td><button type="button" onclick="insertValues('6')">6</button></td>
+                    <td><button type="button" onclick="insertValues('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button" onclick="insertValues('1')">1</button></td>
+                    <td><button type="button" onclick="insertValues('2')">2</button></td>
+                    <td><button type="button" onclick="insertValues('3')">3</button></td>
+                    <td><button type="button" onclick="insertValues('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button style="width: 100px;" type="button" onclick="insertValues('0')"
+                        >0</button></td>
+                    <td><button type="button" onclick="insertValues('.')">.</button></td>
+                    <td><button type="button" onclick="calculate()">=</button></td>
+                </tr>
+            </table>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
